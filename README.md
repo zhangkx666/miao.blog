@@ -13,8 +13,8 @@ Phalcon是一个开源的、全栈的、用C语言编写的PHP5框架，为开�
 编辑器样式和弹窗依赖[Layui](https://github.com/sentsin/layui)
 
 编辑器需要的几个文件：
-public/layui/lay/modules/markdown.js
-public/layui/css/modules/markdown/*.css
+* public/layui/lay/modules/markdown.js
+* public/layui/css/modules/markdown/*.css
 
 
 编辑器已封装为插件，使用方法如下：
