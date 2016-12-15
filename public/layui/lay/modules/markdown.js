@@ -1,6 +1,6 @@
 /**
  @Name：layui.markdown markdown编辑器
- @Author：kun
+ @Author：zhangkx
  @License：LGPL
  */
 layui.define(['layer', 'form'], function (exports) {
