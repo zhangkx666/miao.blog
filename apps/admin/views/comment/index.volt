@@ -1,0 +1,1 @@
+{{ router.getModuleName() }}/{{ router.getControllerName() }}/{{ router.getActionName() }}

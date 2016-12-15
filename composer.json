@@ -1,0 +1,28 @@
+{
+  "name": "robbie/miao",
+  "description": "a blog based on phalcon",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robbie",
+      "email": "kunloon@qq.com"
+    }
+  ],
+  "require": {
+    "phalcon/devtools": "dev-master",
+    "joyqi/hyper-down": "dev-master"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Monolog\\": "src/",
+      "Vendor\\Namespace\\": ""
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.article-form {
+    float: left;
+    width: 50%;
+}
+
+.article-preview {
+    margin-left: 52%;
+    margin-right: 10px;
+    padding: 15px;
+    background: #fbfbfb;
+    box-shadow: rgba(0,0,0,0.35) 0px 0px 4px;
+    height: 765px;
+    overflow-y: scroll;
+}
+
+.article-preview .article-title {
+    font-size: 1.25em;
+    font-weight: 200;
+    color: #555;
+    line-height: 48px !important;
+}
+.article-preview .url {
+    color: #ABBAC3;
+}
+
+/* 响应式 */
+@media screen and (max-width: 1600px) {
+    .article-preview {
+        display: none;
+    }
+    .article-preview.full {
+        display: block;
+    }
+    .article-form {
+        float: none;
+        width: 100%;
+    }
+    .article-form .input-text {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .article-form .input-text {
+        width: 100%;
+    }
+    .layui-markdown.full-screen {
+        width: 100% !important;
+    }
+    .article-preview.full {
+        display: none;
+    }
+
+    .article-form .layui-form-label {
+        float: none;
+        text-align: left;
+    }
+    .article-form .layui-form-label.required:before {
+        content: '';
+    }
+    .article-form .layui-form-label.required:after {
+        content: ' *';
+        color: red;
+    }
+    .article-form .layui-input-block, .layui-form-mid.block {
+        margin-left: 0 !important;
+    }
+
+    .article-form .layui-form-item.item-inline .layui-form-label {
+        float: left;
+    }
+    .article-form .layui-form-item.item-inline .layui-input-inline {
+        margin-left: 0px !important;
+    }
+}
+@media screen and (max-width: 450px) {
+    .article-form .layui-form-select .layui-edge {
+        margin-top: 15px;
+    }
+    .layui-form-label.label-80 {
+        width: 80px!important;
+    }
+}
+
+/* markdown editor css */
+.article-preview.full {
+    position: fixed;
+    top: 3px;
+    z-index: 1113;
+    right: 2px;
+    width: 48%;
+    height: 95.5%;
+}

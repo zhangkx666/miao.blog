@@ -1,0 +1,427 @@
+html{
+    height: 100%;
+}
+body {
+    background: #E5E9EF;
+    height: 100%;
+}
+.container {
+    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+.layui-content {
+    padding-bottom: 80px;
+}
+.layui-main {
+    max-width: 1140px;
+    width: auto;
+}
+.layui-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    background-color: #393D49;
+}
+.layui-footer .layui-main {
+    padding-left: 15px;
+    padding-top: 12px;
+}
+.layui-footer p {
+    color: #e2e2e2;
+    line-height: 150%;
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.layui-footer a {
+    color: #fff;
+}
+.layui-footer a:hover {
+    color: #01AAED;
+}
+.header {
+    height: 59px;
+    border-bottom: 1px solid #404553;
+    background-color: #393D49;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    color: #fff;
+    font-size: 26px;
+}
+
+.logo img {
+    width: 82px;
+    height: 31px;
+}
+
+.header .layui-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    background: none;
+}
+
+.header .layui-nav .layui-nav-item {
+    margin: 0 5px;
+}
+
+.layui-main .image-banner {
+    margin-top: 1px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.layui-main .main-box {
+    margin: 8px 8px 30px 8px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.35) 0px 0px 10px
+    /*padding: 5px;*/
+}
+
+.article-block {
+    padding: 25px 30px 15px 30px;
+    border-bottom: 1px dashed rgba(226, 226, 226, 0.6);
+    clear: both;
+}
+
+.article-block:last-child {
+    border-bottom: none;
+}
+
+.article-block .img {
+    float: left;
+    width: 220px;
+    overflow: hidden;
+}
+
+.article-block .img img {
+    width: 200px;
+    height: 125px;
+    border-radius: 3px;
+}
+
+.article-block h4 a {
+    color: #1AA094;
+    font-size: 22px;
+}
+
+.article-block .content {
+    font-size: 13px;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.article-block .content.margin {
+    padding-left: 10px;
+    margin-left: 210px;
+}
+
+.article-block .content .desc {
+    margin-top: 12px;
+    color: #616873;
+    font-size: 14px;
+    line-height: 1.8;
+    /*max-height: 68px;*/
+    overflow: hidden;
+}
+
+.article-info {
+    color: #ccc;
+    font-size: 13px;
+    padding-top: 20px;
+    clear: both;
+}
+
+.article-info a,
+.comment-block a{
+    color: #ccc;
+}
+
+a:hover,
+.article-info a:hover,
+.article-block h4 a:hover {
+    color: #01AAED;
+    text-decoration: none;
+}
+.m-b-10 {
+    margin-bottom: 10px;
+}
+.m-l-20 {
+    margin-left: 20px;
+}
+.m-l-5{
+    margin-left: 5px;
+}
+
+.m-r-3 {
+    margin-right: 3px;
+}
+
+/* article-show */
+.article-show {
+    padding: 20px;
+}
+
+.article-show h1 {
+    font-size: 28px;
+    color: #1AA094;
+}
+
+.article-show .article-info {
+    padding-top: 10px;
+}
+
+.article-show .content {
+    margin-top: 40px;
+}
+
+.menu-more {
+    display: none;
+}
+
+/* 评论部分css */
+.quote-title {
+    margin: 8px;
+}
+.main-box.comment {
+    /*margin-top: -25px;*/
+    padding-bottom: 20px;
+}
+.layui-elem-quote.quote-white {
+    background: #fff !important;
+}
+.comment-block {
+    position: relative;
+    padding: 25px 20px 15px 20px;
+    border-bottom: 1px dashed rgba(226, 226, 226, 0.6);
+    clear: both;
+    color: #858585;
+    min-height: 92px;
+}
+.comment-block:last-child {
+    /*border-bottom: none;*/
+}
+.comment-block .avatar {
+    float: left;
+    width: 64px;
+    height: 64px;
+    position: relative;
+}
+.comment-block .avatar img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.comment-block .avatar p {
+    margin-top: 10px;
+    color: #ccc;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.comment-block .content {
+    margin-left: 100px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.comment-block .time {
+    margin-left: 100px;
+    color: #ccc;
+}
+.time .back {
+    padding: 1px 5px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 12px;
+}
+.time .back:hover {
+    border-color: #1AA094;
+    background: #1AA094;
+    color: #fff;
+}
+.time .back.red {
+    border: 1px solid #D15B47;
+    color: #D15B47 !important;
+    font-size: 12px;
+}
+.time .back.red:hover {
+    border-color: #D15B47;
+    background: #D15B47;
+    color: #fff !important;
+}
+.clear {
+    clear: both;
+}
+.layui-form-label {
+    width: 110px !important;
+    padding: 9px 0 !important;
+}
+.layui-input-inline {
+    margin-left: 20px !important;
+}
+.main-box.comment .tools i {
+    top: 1px !important;
+}
+.comment-form {
+    padding: 36px 20px 20px 20px;
+}
+.no-margin {
+    margin-left: 0 !important;
+}
+.comment-form .layui-input-inline {
+    width: 180px;
+}
+.comment-form .width-370px {
+    width: 370px !important;
+}
+.comment-form .width-450px {
+    width: 500px;
+}
+span.required:before, label.required:before {
+    content: "* ";
+    color: red;
+}
+.btn-upload {
+    transform: translateY(-1px) !important;
+}
+
+/* 响应式 */
+@media screen and (max-width: 815px) {
+    .layui-input-inline {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .header {
+        height: 40px;
+    }
+    .header .logo {
+        font-size: 20px;
+        top: 10px;
+        left: 15px;
+    }
+    .header .layui-nav {
+        display: none;
+        width: 200px;
+        right: 7px;
+        top: 47px;
+        padding: 0;
+        background: #393D49;
+    }
+    .header .layui-nav .layui-this {
+        margin: 0 !important;
+    }
+    .header .layui-nav .layui-this > a {
+        background-color: #5FB878 !important;
+    }
+    .header .layui-nav .layui-nav-item {
+        display: block;
+        /*width: 97%;*/
+        line-height: 45px;
+        margin: 0;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+    }
+    .header .layui-nav .layui-nav-item .layui-nav-more {
+        display: none;
+    }
+    .header .layui-nav .layui-nav-item:hover {
+        background: #5FB878;
+    }
+    .header .layui-nav .layui-nav-item.parent-menu:hover {
+        background: none;
+        cursor: default;
+    }
+    .header .layui-nav .layui-nav-child {
+        display: block;
+        background-color: #4E5465;
+        border: none;
+        border-radius: 0;
+        position: inherit;
+        top: 0px;
+        padding: 0;
+    }
+    .header .layui-nav .layui-nav-child dd a{
+        padding-left: 40px;
+        color: #e6e6e6;
+    }
+    .header .layui-nav .layui-nav-child dd a:hover {
+        background: #5FB878;
+    }
+    .menu-more {
+        width: 36px;
+        height: 36px;
+        background: #676e85;
+        color: #d0d0d0;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 2px;
+        font-size: 23px;
+        border: none;
+        border-radius: 2px;
+    }
+    .layui-input-inline {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .comment-form .width-450px{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .comment-form .layui-input-inline {
+        width: 100%;
+    }
+    .comment-form .width-370px{
+        width: 100% !important;
+    }
+    .layui-input-inline {
+        margin-top: 10px !important;
+    }
+    .comment-block {
+        padding: 15px 15px 40px 15px;
+    }
+    .comment-block .avatar {
+        float: left;
+        width: 32px;
+        height: 32px;
+        position: relative;
+    }
+    .comment-block .avatar img {
+        width: 32px;
+        height: 32px;
+    }
+    .comment-block .avatar p {
+        position: absolute;
+        left: 43px;
+        top: -3px;
+        /*width: 80px;*/
+        text-align: left;
+    }
+    .comment-block .content {
+        margin-left: 0;
+        margin-top: 45px;
+        clear: both;
+    }
+    .comment-block .time {
+        margin-left: 0;
+        position: absolute;
+        bottom: 9px;
+        right: 15px;
+    }
+}
+
+
+/*common*/
+.color-default{color:#ABBAC3 !important;}.color-info{color:#3A87AD !important;}.color-warning{color:#F89406 !important;}.color-blue{color:#03a9f4 !important;}.color-purple{color:#9585BF !important;}.color-success{color:#87B87F !important;}.color-danger{color:#D15B47 !important;}.color-yellow{color:#FEE188 !important;}.color-pink{color:#D6487E !important;}.color-grey{color:#A0A0A0 !important;}.color-dark-green{color:#179c11 !important;}.color-red{color:#ff083e !important;}.dark{color:#333333 !important;}.white{color:#ffffff !important;}.red{color:#dd5a43 !important;}.red2{color:#e08374 !important;}.light-red{color:#ff7777 !important;}.blue{color:#478fca !important;}.blue2{color:#438EB9 !important;}.dark-blue{color:#130eff !important;}a.dark-blue:hover{color:#ff0000 !important;text-decoration:none !important;}.light-blue{color:#93cbf9 !important;}.green{color:#69aa46 !important;}.dark-green{color:#14870F !important;}.light-green{color:#b0d877 !important;}.orange{color:#ff892a !important;}.orange2{color:#feb902 !important;}.light-orange{color:#fcac6f !important;}.purple{color:#a069c3 !important;}.pink{color:#c6699f !important;}.pink2{color:#d6487e !important;}.brown{color:#a52a2a !important;}.grey{color:#777777 !important;}.light-grey{color:#bbbbbb !important;}.bigger-110{font-size:110% !important;}.bigger-120{font-size:120% !important;}.bigger-130{font-size:130% !important;}.bigger-135{font-size:135% !important;}.bigger-140{font-size:140% !important;}.bigger-150{font-size:150% !important;}.bigger-160{font-size:160% !important;}.bigger-170{font-size:170% !important;}.bigger-180{font-size:180% !important;}.bigger-190{font-size:190% !important;}.bigger-200{font-size:200% !important;}.bigger-210{font-size:210% !important;}.bigger-220{font-size:220% !important;}.bigger-230{font-size:230% !important;}.bigger-240{font-size:240% !important;}.bigger-250{font-size:250% !important;}.bigger-260{font-size:260% !important;}.bigger-270{font-size:270% !important;}.bigger-280{font-size:280% !important;}.bigger-290{font-size:290% !important;}.bigger-300{font-size:300% !important;}.bigger-115{font-size:115% !important;}.bigger-125{font-size:125% !important;}.bigger-175{font-size:175% !important;}.bigger-225{font-size:225% !important;}.bigger-275{font-size:275% !important;}.smaller-90{font-size:90% !important;}.smaller-80{font-size:80% !important;}.smaller-70{font-size:70% !important;}.smaller-60{font-size:60% !important;}.smaller-50{font-size:50% !important;}.smaller-40{font-size:40% !important;}.smaller-30{font-size:30% !important;}.smaller-20{font-size:20% !important;}.smaller-75{font-size:75% !important;}.m-t-10{margin-top: 10px;}
