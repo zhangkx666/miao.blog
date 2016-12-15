@@ -22,7 +22,7 @@ Phalcon是一个开源的、全栈的、用C语言编写的PHP5框架，为开�
 <div id="layui_md"></div>
 
 <script>
-    layui.config({base: '/public/layui/lay/'}).extend({ //设定组件别名
+    layui.config({base: '/public/layui/lay/'}).extend({
         markdown: 'modules/markdown'
     });
     layui.use(['form', 'markdown'], function () {
