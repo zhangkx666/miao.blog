@@ -22,11 +22,33 @@ Phalcon是一个开源的、全栈的、用C语言编写的PHP5框架，为开�
 <div id="layui_md"></div>
 
 <script>
-    layui.config({base: '/public/layui/lay/'}).extend({
+    layui.config({base: '/public/layui/lay/'}).extend({ //设定组件别名
         markdown: 'modules/markdown'
     });
     layui.use(['form', 'markdown'], function () {
-        layui.markdown.build("layui_md");
-    });
+        layui.markdown.build("layui_md", {
+            image_upload_action: '/admin/attachment/uploadImage',
+            height: 400, required: true
+        });
+
+        // markdown 解析
+        var parser = new HyperDown;
+        var html = parser.makeHtml(val);
+        ...
 </script>
 ```
+具体用法可以参考
+apps/admin/views/article/new.volt
+和
+apps/admin/views/article/edit.volt
+
+
+markdown解析库用的 [HyperDown.js](https://github.com/SegmentFault/HyperDown.js)，之所以选它是因为它有对应的PHP解析库 ，前后端都可以搞。在这个库基础上添加了表情的支持。
+
+本项目中做了一些修改：
+
+public/js/HyperDown/Parser.js
+
+对应的PHP类在 apps/common/libs/Markdown.php
+
+
